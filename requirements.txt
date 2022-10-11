@@ -1,0 +1,5 @@
+sphinx
+sphinx_rtd_theme
+insegel
+sphinx-book-theme
+sphinx-copybutton
