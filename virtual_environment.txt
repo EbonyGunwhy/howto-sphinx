@@ -1,0 +1,10 @@
+# Creation of virtual environment:
+conda create --name dcmri python=3.7
+
+
+# Activation of virtual environment
+conda activate dcmri
+
+
+# Deactivation of virtual environment
+conda deactivate
