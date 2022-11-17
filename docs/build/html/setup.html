@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>SETUP (PROJECT ENVIRONMENT &amp; SPHINX) &#8212; howto-sphinx 1.0 documentation</title>
+    <title>Project environment and setup &#8212; howto-sphinx 1.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -36,7 +36,7 @@
     <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="CUSTOMISATION (SPHINX INDEX &amp; CONFIGURATION)" href="customisation.html" />
+    <link rel="next" title="Getting started with Sphinx" href="gettingstarted.html" />
     <link rel="prev" title="ABOUT" href="readme.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -74,11 +74,6 @@
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
-      
-      
-      <img src="_static/sheffield-logo.jpg" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">howto-sphinx 1.0 documentation</h1>
@@ -89,40 +84,95 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p aria-level="2" class="caption" role="heading">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="readme.html">
+   <strong>
+    ABOUT
+   </strong>
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Contents:
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="readme.html">
-   ABOUT
-  </a>
- </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   SETUP (PROJECT ENVIRONMENT &amp; SPHINX)
+   Project environment and setup
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="gettingstarted.html">
+   Getting started with Sphinx
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="configuration.html">
+     conf.py file
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="index-page.html">
+     index.rst file
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api-modules.html">
+     Auto-generating the project API documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md-readme.html">
+     Including a README written in markdown language
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="deploy.html">
+   Deploy Sphinx documentation online
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="github.html">
+     PUSHING TO GITHUB BRANCH
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="readthedocs.html">
+     SYNCING TO READTHEDOCS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="integration.html">
+   Continuous integration with GitHub
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Appendices
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="customisation.html">
-   CUSTOMISATION (SPHINX INDEX &amp; CONFIGURATION)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="build.html">
-   BUILD (SPHINX HTML pages)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="deploy.html">
-   DEPLOY ONLINE (GITHUB &amp; READTHEDOCS)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dcmri.html">
-   QUICK OVERVIEW OF ‘HOW-TO’ STEPS:
+   Working with restructured text files
   </a>
  </li>
 </ul>
@@ -235,23 +285,70 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#environment-and-dependencies">
+   Environment and dependencies
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installation">
+   Installation
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>SETUP (PROJECT ENVIRONMENT & SPHINX)</h1>
+                <h1>Project environment and setup</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#environment-and-dependencies">
+   Environment and dependencies
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installation">
+   Installation
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -259,35 +356,51 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="setup-project-environment-sphinx">
-<h1>SETUP (PROJECT ENVIRONMENT &amp; SPHINX)<a class="headerlink" href="#setup-project-environment-sphinx" title="Permalink to this headline"></a></h1>
-<ol class="arabic simple">
-<li><p>Open visual studio</p></li>
-<li><p>Navigate to empty project directory</p></li>
-</ol>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>cd Documents/GIT/QIB-Sheffield/project_name
+  <section id="project-environment-and-setup">
+<h1>Project environment and setup<a class="headerlink" href="#project-environment-and-setup" title="Permalink to this headline"></a></h1>
+<section id="environment-and-dependencies">
+<h2>Environment and dependencies<a class="headerlink" href="#environment-and-dependencies" title="Permalink to this headline"></a></h2>
+<p>A working Python environment is required to generate <code class="docutils literal notranslate"><span class="pre">Sphinx</span></code> documentation.
+In this guide, <code class="docutils literal notranslate"><span class="pre">conda</span></code> virtual environments are used to manage the project
+dependencies in isolation. The <code class="docutils literal notranslate"><span class="pre">conda</span></code> package manager may be downloaded
+directly from <a class="reference external" href="https://www.anaconda.com/download/">Anaconda’s webpage</a>.
+Feel free to create virtual environments using other tools, however please
+remember to adjust the following anaconda-specific commands as necessary.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The following steps assume that commands are run from a Windows OS. If
+replicating from a different OS, please adapt commands to the appropriate
+related invocation (<a class="reference external" href="https://kinsta.com/blog/python-commands/">Some examples here</a>).</p>
+</div>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h2>
+<ol class="arabic">
+<li><p>Open Git Bash in an interface of your choice and navigate to an empty project
+directory by inputting the following command:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>cd &lt;path_to_project_name&gt;
 </pre></div>
 </div>
-<ol class="arabic simple" start="3">
-<li><p>Clone project from github</p></li>
-</ol>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>git clone -b branch_name https://github.com/account_name/project_name.git .
+</li>
+<li><p>Clone the target project from github</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>git clone -b &lt;branch_name&gt; https://github.com/&lt;account_name&gt;/&lt;project_name&gt;.git .
 </pre></div>
 </div>
-<ol class="arabic simple" start="4">
-<li><p>Create virtual environment</p></li>
-</ol>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>conda create --name project_name python=3.7
+<p>Alternatively, download the whole archive locally as a zip file.
+<a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">More details on cloning a repository here</a>.</p>
+</li>
+<li><p>From the project root directory, run the following command to create a separate virtual environment:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>conda create --name &lt;project_name&gt; python=&lt;version_of_choice&gt;
 </pre></div>
 </div>
-<ol class="arabic simple" start="5">
-<li><p>Activate virtual environment</p></li>
-</ol>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>conda activate project_name
+<p>In these examples, Python v.3.7 was installed.</p>
+</li>
+<li><p>Activate the virtual environment</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>conda activate &lt;project_name&gt;
 </pre></div>
 </div>
-<ol class="arabic" start="6">
-<li><p>Create requirements.txt file with list of required packages to install:</p>
+</li>
+<li><p>Create a requirements.txt file listing all the required packages to install, e.g.:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">numpy</span>
 <span class="n">pandas</span>
 <span class="n">statistics</span>
@@ -298,37 +411,13 @@ title="Print to PDF"
 </pre></div>
 </div>
 </li>
-<li><p>Install required packages</p></li>
-</ol>
+<li><p>Install the required packages</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>pip install -r requirements.txt
 </pre></div>
 </div>
-<ol class="arabic simple" start="8">
-<li><p>Create documentation folder</p></li>
+</li>
 </ol>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>mkdir docs
-</pre></div>
-</div>
-<ol class="arabic simple" start="9">
-<li><p>Navigate to documentation folder</p></li>
-</ol>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>cd docs
-</pre></div>
-</div>
-<ol class="arabic simple" start="10">
-<li><p>Run Sphinx quickstart</p></li>
-</ol>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>sphinx-quickstart
-</pre></div>
-</div>
-<p>Options for sphinx-quickstart:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">i</span><span class="o">.</span> <span class="n">Separate</span> <span class="n">source</span> <span class="ow">and</span> <span class="n">build</span> <span class="n">directories</span> <span class="p">(</span><span class="n">y</span><span class="p">)</span>
-<span class="n">ii</span><span class="o">.</span> <span class="n">Project</span> <span class="n">name</span> <span class="p">(</span><span class="n">project_name</span><span class="p">)</span>
-<span class="n">iii</span><span class="o">.</span> <span class="n">Author</span> <span class="n">name</span> <span class="p">(</span><span class="n">QIB</span><span class="o">-</span><span class="n">Sheffield</span><span class="p">)</span>
-<span class="n">iv</span><span class="o">.</span> <span class="n">Project</span> <span class="n">release</span><span class="o">/</span><span class="n">version</span> <span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
-<span class="n">v</span><span class="o">.</span> <span class="n">Project</span> <span class="n">language</span> <span class="p">(</span><span class="n">en</span><span class="p">)</span>
-</pre></div>
-</div>
+</section>
 </section>
 
 
@@ -343,13 +432,13 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">ABOUT</p>
+            <p class="prev-next-title"><strong>ABOUT</strong></p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="customisation.html" title="next page">
+    <a class='right-next' id="next-link" href="gettingstarted.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">CUSTOMISATION (SPHINX INDEX &amp; CONFIGURATION)</p>
+        <p class="prev-next-title">Getting started with Sphinx</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

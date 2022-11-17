@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>CUSTOMISATION (SPHINX INDEX &amp; CONFIGURATION) &#8212; howto-sphinx 1.0 documentation</title>
+    <title>Working with restructured text files &#8212; howto-sphinx 1.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -36,8 +36,7 @@
     <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="BUILD (SPHINX HTML pages)" href="build.html" />
-    <link rel="prev" title="SETUP (PROJECT ENVIRONMENT &amp; SPHINX)" href="setup.html" />
+    <link rel="prev" title="Continuous integration with GitHub" href="integration.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -74,11 +73,6 @@
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
-      
-      
-      <img src="_static/sheffield-logo.jpg" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">howto-sphinx 1.0 documentation</h1>
@@ -89,40 +83,95 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p aria-level="2" class="caption" role="heading">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="readme.html">
+   <strong>
+    ABOUT
+   </strong>
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Contents:
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="readme.html">
-   ABOUT
-  </a>
- </li>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="setup.html">
-   SETUP (PROJECT ENVIRONMENT &amp; SPHINX)
+   Project environment and setup
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="gettingstarted.html">
+   Getting started with Sphinx
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="configuration.html">
+     conf.py file
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="index-page.html">
+     index.rst file
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api-modules.html">
+     Auto-generating the project API documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md-readme.html">
+     Including a README written in markdown language
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="deploy.html">
+   Deploy Sphinx documentation online
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="github.html">
+     PUSHING TO GITHUB BRANCH
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="readthedocs.html">
+     SYNCING TO READTHEDOCS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="integration.html">
+   Continuous integration with GitHub
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Appendices
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   CUSTOMISATION (SPHINX INDEX &amp; CONFIGURATION)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="build.html">
-   BUILD (SPHINX HTML pages)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="deploy.html">
-   DEPLOY ONLINE (GITHUB &amp; READTHEDOCS)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dcmri.html">
-   QUICK OVERVIEW OF ‘HOW-TO’ STEPS:
+   Working with restructured text files
   </a>
  </li>
 </ul>
@@ -235,70 +284,23 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#a-index-rst-file">
-   A. index.rst file
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#b-conf-py-file">
-   B. conf.py file
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>CUSTOMISATION (SPHINX INDEX & CONFIGURATION)</h1>
+                <h1>Working with restructured text files</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#a-index-rst-file">
-   A. index.rst file
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#b-conf-py-file">
-   B. conf.py file
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -306,96 +308,89 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="customisation-sphinx-index-configuration">
-<h1>CUSTOMISATION (SPHINX INDEX &amp; CONFIGURATION)<a class="headerlink" href="#customisation-sphinx-index-configuration" title="Permalink to this headline"></a></h1>
-<section id="a-index-rst-file">
-<h2>A. index.rst file<a class="headerlink" href="#a-index-rst-file" title="Permalink to this headline"></a></h2>
-<ol class="arabic">
-<li><p>Locate index.rst file generated by sphinx-quickstart (source/index.rst)</p></li>
-<li><dl>
-<dt>Edit top of file as desired. This text will be displayed on the welcome page of the website</dt><dd><ul class="simple">
-<li><p>Bold</p></li>
-</ul>
+  <section id="working-with-restructured-text-files">
+<h1>Working with restructured text files<a class="headerlink" href="#working-with-restructured-text-files" title="Permalink to this headline"></a></h1>
+<p>Bold</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gs">**text**</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Italics</p></li>
-</ul>
+<p>Italics</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="ge">*text*</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Bullets</p></li>
-</ul>
+<p>Bullets</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">*</span> text
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Separate main headings (====================)</p></li>
-<li><p>Separate sub-headings (———————)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl>
-<dt>Edit/add directives (.. directive::), e.g.:</dt><dd><ul class="simple">
-<li><p>Insert figure</p></li>
-</ul>
+<p>Numbered list</p>
+<p>Like this:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">1.</span> Item 1
+<span class="m">2.</span> Item 2
+</pre></div>
+</div>
+<p>or like this, gives the same output:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">#.</span> Item 1
+<span class="m">#.</span> Item 2
+</pre></div>
+</div>
+<p>Separate headings</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MAIN</span> <span class="n">HEADING</span>
+<span class="o">===============</span>
+
+<span class="n">Sub</span><span class="o">-</span><span class="n">heading</span>
+<span class="o">--------------</span>
+
+<span class="n">Sub</span><span class="o">-</span><span class="n">sub</span><span class="o">-</span><span class="n">heading</span>
+<span class="o">++++++++++++++++</span>
+</pre></div>
+</div>
+<p>Edit/add directives (.. directive::), e.g.:</p>
+<ul>
+<li><p>Insert a figure</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> /images/sheffield-logo.jpg
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Insert inline image</p></li>
-</ul>
+</li>
+<li><p>Insert an inline image, such as a button icon</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">|button_name|</span> <span class="ow">image</span><span class="p">::</span> /images/buttons/button_name.png
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Include table of contents</p></li>
-</ul>
+</li>
+<li><p>Include table of contents</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Add a note box</p></li>
-</ul>
+</li>
+<li><p>Add a note box</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">note</span><span class="p">::</span> This is a note box.
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Add a warning box</p></li>
-</ul>
+</li>
+<li><p>Add a warning box</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">warning</span><span class="p">::</span> This is a warning box.
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Add customised text box</p></li>
-</ul>
+</li>
+<li><p>Add customised text box</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">admonition</span><span class="p">::</span> Customised text box
 </pre></div>
 </div>
-</dd>
-</dl>
 </li>
-</ol>
-<ol class="arabic" start="3">
-<li><p>Customise directive features on new indented line directly underneath directive (:features:), e.g.:</p>
-<blockquote>
-<div><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span><span class="ow">toctree</span><span class="p">::</span>
+</ul>
+<p>Customise directive features on newly indented line directly underneath
+directive (:features:), e.g.:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span><span class="ow">toctree</span><span class="p">::</span>
         <span class="nc">:maxdepth:</span> 5
-<span class="nc">:caption:</span> Contents:
+  <span class="nc">:caption:</span> Contents:
 </pre></div>
 </div>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> /images/sheffield-logo.jpg
         <span class="nc">:align:</span> right
 </pre></div>
 </div>
-</div></blockquote>
-</li>
-<li><p>Display text on new indented line underneath directive with space separating lines, e.g.:</p>
-<blockquote>
-<div><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">admonition</span><span class="p">::</span> Customised text box
+<p>Display text on newly indented line underneath directive with space
+separating lines, e.g.:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">admonition</span><span class="p">::</span> Customised text box
 
         This is a customised text box.
 </pre></div>
@@ -406,56 +401,6 @@ title="Print to PDF"
         University of Sheffield logo
 </pre></div>
 </div>
-</div></blockquote>
-</li>
-</ol>
-</section>
-<section id="b-conf-py-file">
-<h2>B. conf.py file<a class="headerlink" href="#b-conf-py-file" title="Permalink to this headline"></a></h2>
-<ol class="arabic">
-<li><p>Locate conf.py file generated by sphinx-quickstart (source/conf.py)</p></li>
-<li><dl>
-<dt>Add/adjust configuration options, e.g.:</dt><dd><ul>
-<li><p>Set theme to ReadTheDocs style:</p>
-<blockquote>
-<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sphinx_rtd_theme</span>
-<span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinx_rtd_theme&#39;</span>
-</pre></div>
-</div>
-</div></blockquote>
-</li>
-<li><p>Assign system path for locating project module directory</p></li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;../../src&#39;</span><span class="p">))</span>
-</pre></div>
-</div>
-<ul>
-<li><p>Include extensions for sphinx autodocumentation generation (autodoc) and parsing of NumPy and Google style docstrings (napoleon):</p>
-<blockquote>
-<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinx.ext.autodoc&#39;</span><span class="p">,</span> <span class="s1">&#39;sphinx.ext.napoleon&#39;</span><span class="p">]</span>
-</pre></div>
-</div>
-</div></blockquote>
-</li>
-<li><p>Include extension for viewing code:</p></li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinx.ext.viewcode&#39;</span><span class="p">]</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><dl class="simple">
-<dt>Disable parsing of Google-style docstrings and alter how parameters and return types for functions are formatted (examples):</dt><dd><p>napoleon_google_docstring = False
-napoleon_use_param = False
-napoleon_use_ivar = True</p>
-</dd>
-</dl>
-</li>
-</ul>
-</dd>
-</dl>
-</li>
-</ol>
-</section>
 </section>
 
 
@@ -466,19 +411,12 @@ napoleon_use_ivar = True</p>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="setup.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="integration.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">SETUP (PROJECT ENVIRONMENT &amp; SPHINX)</p>
+            <p class="prev-next-title">Continuous integration with GitHub</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="build.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">BUILD (SPHINX HTML pages)</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

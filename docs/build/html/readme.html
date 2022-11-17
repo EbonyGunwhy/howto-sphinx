@@ -36,7 +36,7 @@
     <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="SETUP (PROJECT ENVIRONMENT &amp; SPHINX)" href="setup.html" />
+    <link rel="next" title="Project environment and setup" href="setup.html" />
     <link rel="prev" title="Welcome to howto-sphinx’s documentation!" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -74,11 +74,6 @@
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
-      
-      
-      <img src="_static/sheffield-logo.jpg" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">howto-sphinx 1.0 documentation</h1>
@@ -89,47 +84,95 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p aria-level="2" class="caption" role="heading">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   <strong>
+    ABOUT
+   </strong>
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Contents:
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   ABOUT
-  </a>
- </li>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="setup.html">
-   SETUP (PROJECT ENVIRONMENT &amp; SPHINX)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="customisation.html">
-   CUSTOMISATION (SPHINX INDEX &amp; CONFIGURATION)
+   Project environment and setup
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="build.html">
-   BUILD (SPHINX HTML pages)
+  <a class="reference internal" href="gettingstarted.html">
+   Getting started with Sphinx
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="simple">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="configuration.html">
+     conf.py file
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="index-page.html">
+     index.rst file
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api-modules.html">
+     Auto-generating the project API documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md-readme.html">
+     Including a README written in markdown language
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="deploy.html">
+   Deploy Sphinx documentation online
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="github.html">
+     PUSHING TO GITHUB BRANCH
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="readthedocs.html">
+     SYNCING TO READTHEDOCS
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="deploy.html">
-   DEPLOY ONLINE (GITHUB &amp; READTHEDOCS)
+  <a class="reference internal" href="integration.html">
+   Continuous integration with GitHub
   </a>
  </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Appendices
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="dcmri.html">
-   QUICK OVERVIEW OF ‘HOW-TO’ STEPS:
+  <a class="reference internal" href="customisation.html">
+   Working with restructured text files
   </a>
  </li>
 </ul>
@@ -267,7 +310,7 @@ title="Print to PDF"
               <div>
                 
   <section id="about">
-<h1>ABOUT<a class="headerlink" href="#about" title="Permalink to this headline"></a></h1>
+<h1><strong>ABOUT</strong><a class="headerlink" href="#about" title="Permalink to this headline"></a></h1>
 <p>Steps for creating documentation for open source software projects with Sphinx.</p>
 </section>
 
@@ -289,7 +332,7 @@ title="Print to PDF"
     <a class='right-next' id="next-link" href="setup.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">SETUP (PROJECT ENVIRONMENT &amp; SPHINX)</p>
+        <p class="prev-next-title">Project environment and setup</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

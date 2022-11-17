@@ -1,11 +1,6 @@
 BUILD (SPHINX HTML pages)
 ==================================================================================
 
-1. Run sphinx html build to generate html pages for project documentation
-
-.. code-block:: rst
-	
-	make html
 
 2. Run sphinx automatic API documentation to generate .rst files for each module located in src folder. This generates a modules.rst file containing list of all modules to include.
 -f forces override of any previously written .rst files with same name

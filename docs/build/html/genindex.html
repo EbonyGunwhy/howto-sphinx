@@ -71,11 +71,6 @@
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
-      
-      
-      <img src="_static/sheffield-logo.jpg" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">howto-sphinx 1.0 documentation</h1>
@@ -86,40 +81,95 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p aria-level="2" class="caption" role="heading">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="readme.html">
+   <strong>
+    ABOUT
+   </strong>
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Contents:
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="readme.html">
-   ABOUT
+  <a class="reference internal" href="setup.html">
+   Project environment and setup
   </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="gettingstarted.html">
+   Getting started with Sphinx
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="configuration.html">
+     conf.py file
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="index-page.html">
+     index.rst file
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api-modules.html">
+     Auto-generating the project API documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="md-readme.html">
+     Including a README written in markdown language
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="deploy.html">
+   Deploy Sphinx documentation online
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="github.html">
+     Pushing to GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="readthedocs.html">
+     Syncing with ReadTheDocs
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="setup.html">
-   SETUP (PROJECT ENVIRONMENT &amp; SPHINX)
+  <a class="reference internal" href="integration.html">
+   Continuous integration with GitHub
   </a>
  </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Appendices
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="customisation.html">
-   CUSTOMISATION (SPHINX INDEX &amp; CONFIGURATION)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="build.html">
-   BUILD (SPHINX HTML pages)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="deploy.html">
-   DEPLOY ONLINE (GITHUB &amp; READTHEDOCS)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dcmri.html">
-   QUICK OVERVIEW OF ‘HOW-TO’ STEPS:
+   Working with restructured text files
   </a>
  </li>
 </ul>

@@ -1,69 +1,68 @@
-SETUP (PROJECT ENVIRONMENT & SPHINX)
-=====================================================================
+Project environment and setup
+==============================
 
-1. Open visual studio
-2. Navigate to empty project directory
+Environment and dependencies
+------------------------------
 
-.. code-block:: rst
+A working Python environment is required to generate ``Sphinx`` documentation.
+In this guide, ``conda`` virtual environments are used to manage the project
+dependencies in isolation. The ``conda`` package manager may be downloaded
+directly from `Anaconda's webpage <https://www.anaconda.com/download/>`_.
+Feel free to create virtual environments using other tools, however please
+remember to adjust the following anaconda-specific commands as necessary.
+
+.. note::
 	
-	cd Documents/GIT/QIB-Sheffield/project_name
+	The following steps assume that commands are run from a Windows OS. If
+	replicating from a different OS, please adapt commands to the appropriate 
+	related invocation (`Some examples here <https://kinsta.com/blog/python-commands/>`_).
 
-3. Clone project from github 
+Installation
+--------------
 
-.. code-block:: rst
-	
-	git clone -b branch_name https://github.com/account_name/project_name.git .
 
-4. Create virtual environment
+#. Open Git Bash in an interface of your choice and navigate to an empty project
+   directory by inputting the following command:
 
-.. code-block:: rst
-	
-	conda create --name project_name python=3.7
+   .. code-block:: rst
 
-5. Activate virtual environment
+         cd <path_to_project_name>
 
-.. code-block:: rst
-	
-	conda activate project_name
+#. Clone the target project from github
 
-6. Create requirements.txt file with list of required packages to install::
+   .. code-block:: rst
 
-	numpy
-	pandas
-	statistics
-	matplotlib
-	scipy
-	wezel
-	sphinx
+         git clone -b <branch_name> https://github.com/<account_name>/<project_name>.git .
 
-7. Install required packages
+   Alternatively, download the whole archive locally as a zip file.
+   `More details on cloning a repository here <https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository>`_.
 
-.. code-block:: rst
-	
-	pip install -r requirements.txt
+#. From the project root directory, run the following command to create a separate virtual environment:
 
-8. Create documentation folder
+   .. code-block:: rst
+         
+         conda create --name <project_name> python=<version_of_choice>
 
-.. code-block:: rst
-	
-	mkdir docs
+   In these examples, Python v.3.7 was installed.
 
-9. Navigate to documentation folder
+#. Activate the virtual environment
 
-.. code-block:: rst
-	
-	cd docs
+   .. code-block:: rst
+			
+         conda activate <project_name>
 
-10. Run Sphinx quickstart 
-
-.. code-block:: rst
-	
-	sphinx-quickstart
-	
-Options for sphinx-quickstart::
+#. Create a requirements.txt file listing all the required packages to install, e.g.::
 		
- 	i. Separate source and build directories (y)
- 	ii. Project name (project_name)
- 	iii. Author name (QIB-Sheffield)
-	iv. Project release/version (1.0)
-	v. Project language (en)
+         numpy
+         pandas
+         statistics
+         matplotlib
+         scipy
+         wezel
+         sphinx
+
+#. Install the required packages
+
+   .. code-block:: rst
+
+         pip install -r requirements.txt
