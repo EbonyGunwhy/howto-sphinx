@@ -13,11 +13,22 @@ Steps for creating documentation for open source software projects with Sphinx.
    This guide is currently a work-in-progress and will be updated with new tips & tricks soon.
 
 .. toctree::
-   :maxdepth: 5
-   :caption: Contents:
+   :hidden:
 
    readme
+
+.. toctree::
+   :maxdepth: 5
+   :hidden:
+   :caption: Contents:
+
    setup
-   customisation
-   build
+   gettingstarted
    deploy
+   integration
+
+.. toctree::
+   :hidden:
+   :caption: Appendices
+
+   customisation

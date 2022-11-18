@@ -34,7 +34,7 @@ exclude_patterns = []
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'sphinx_book_theme'
-#html_theme = 'insegel'
+#html_theme = 'classic'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -43,7 +43,3 @@ html_static_path = ['_static']
 
 # The suffix(es) of source filenames.
 #source_suffix = ['.rst', '.md']
-
-# The name of an image file (relative to this directory) to place at the top
-# of the sidebar.
-html_logo = 'images/sheffield-logo.jpg'
