@@ -1,66 +1,49 @@
 Auto-generating the project API documentation
 =================================================
 
-#. Assign system path for locating project module directory
+#. Open the ``conf.py`` file in an editor. At the top of the file,
+   assign a system path for locating the project modules directory by
+   including the following line of code:
 	
    .. code-block:: python
 
          sys.path.insert(0, os.path.abspath(<relative_path_to_source_modules>))
 
+   .. figure:: /images/api-modules_syspath.png
 		
-#. Run sphinx apidoc from docs folder
-
-   Run sphinx automatic API documentation to generate .rst files for each module
-   located in src folder. This generates a modules.rst file containing list of all
-   modules to include. ``-f`` forces override of any previously written .rst files
-   with the same name.
+#. Run sphinx automatic API documentation to automatically generate an .rst file
+   for each module located in the ``src`` folder. This also generates a modules.rst
+   file containing a list of all the ``src`` modules. ``-f`` forces override of any
+   previously written .rst files with the same name.
 
    .. code-block:: python
          
          sphinx-apidoc -f -o source <relative_path_to_source_modules>
 
-#. Add reference to modules.rst file to the toctree in index.rst:
+   .. figure:: /images/api-modules_modules.png
+
+#. Open the ``modules.rst`` file and change the title to 'API documentation' or
+   another title, as desired:
+   
+   .. figure:: /images/api-modules_moduletitle.png
+
+   Then save the file.
+
+#. Add a cross-reference to the ``modules.rst`` file in the toctree in
+   the ``index.rst`` file:
 
    .. code-block:: rst
       
       .. toctree::
 	   :maxdepth: 5
-	   :caption: Contents:
+	   :caption: My contents are better than your contents:
 	   
-	   modules
-
-#. Edit titles of .rst files at top of page under headings separator 
-   ``=====`` to desired output display in toctree
-
-#. Add/Edit features of .rst file .. automodule:: directives. These can also
-   be adjusted in conf.py file to set values for all .rst files:
-
-   #. Recursively generate documentation for all members of target module
-      
-      .. code-block:: rst
-            
-            .. automodule::
-                  :members:
-
-   #. Generate documentation for members not having docstrings
-
-      .. code-block:: rst
-            
-            .. automodule::
-                  :undoc-members:
-
-   #. Generate documentation for all members inherited from base classes
-	
-      .. code-block:: rst
-            
-            .. automodule::
-                  :show-inheritance:
-
-   #. Generate documentation for __special__ members 
-   
-      .. code-block:: rst
-            
-            .. automodule::
-                  :special-members: __init__, __name__
+	   mynewsection
+      modules
 
 #. Update html with any changes ``make html``
+
+   .. figure:: /images/api-modules_contents.png
+
+   .. figure:: /images/api-modules_api.png
+

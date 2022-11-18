@@ -10,11 +10,12 @@ common options for customising this file are shown below.
 Choosing a theme
 ------------------
 
-Set theme to ReadTheDocs style:
+Choose a theme for your documentation. A number of `pre-existing themes are
+provided by Sphinx <https://www.sphinx-doc.org/en/master/usage/theming.html#builtin-themes>`_:
 
 .. code-block:: python
       
-      html_theme = 'sphinx_rtd_theme'
+      html_theme = 'classic'
 
 
 Extensions
@@ -27,15 +28,30 @@ and parsing of NumPy and Google style docstrings with ``napoleon``:
       
       extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon']
 
-Or for viewing code:
+Or for including a button to allow users to directly view the raw code
+within the documentation:
 
 .. code-block:: python
       
       extensions = ['sphinx.ext.viewcode']
 
-Configure extension settings:
+.. figure:: /images/configuration_viewcode1.png
 
-e.g., ``intersphinx_mapping``, ``autosummary_generate``
+.. figure:: /images/configuration_viewcode2.png
+
+Another handy extension is ``intersphinx``, which generates links to documentation
+for other packages (e.g., ``numpy``) used in the project.
+
+.. code-block:: python
+      
+      extensions = ['sphinx.ext.intersphinx']
+
+Extensions configuration
+---------------------------
+
+The behaviour and output of certain extensions can also be customised:
+
+.. figure:: /images/configuration_intersphinx.png
 
 After all edits have been made to the ``conf.py`` file, save the file
 and then re-build the html pages using the ``make html`` command.
