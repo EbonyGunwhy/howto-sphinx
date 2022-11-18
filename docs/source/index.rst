@@ -6,11 +6,17 @@
 Welcome to howto-sphinx's documentation!
 ========================================
 
-Steps for creating documentation for open source software projects with Sphinx.
+*Steps for creating documentation for open source software projects with Sphinx.*
+--------------------------------------------------------------------------------------
+
+This guide demonstrates how to create html documentation using
+`Sphinx <https://www.sphinx-doc.org/en/master/index.html#>`_ and publish/host the pages
+on a public platform.
 
 .. note::
 
-   This guide is currently a work-in-progress and will be updated with new tips & tricks soon.
+   This guide is currently a work-in-progress and will periodically undergo updates until
+   completion.
 
 .. toctree::
    :hidden:
@@ -19,7 +25,6 @@ Steps for creating documentation for open source software projects with Sphinx.
 
 .. toctree::
    :maxdepth: 5
-   :hidden:
    :caption: Contents:
 
    setup

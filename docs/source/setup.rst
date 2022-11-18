@@ -53,13 +53,15 @@ Installation
 
 #. Create a requirements.txt file listing all the required packages to install, e.g.::
 		
-         numpy
          pandas
+         numpy
          statistics
          matplotlib
          scipy
          wezel
          sphinx
+
+   .. figure:: /images/setup_requirements.png
 
 #. Install the required packages
 

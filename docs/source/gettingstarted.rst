@@ -31,24 +31,27 @@ Now run the Sphinx quickstart command:
       sphinx-quickstart
 	
 A list of options for customising some of the ``sphinx-quickstart`` features
-should now pop up on the screen. Please answer these options according to your
-own preferences.
+should now pop up on the screen. The first of these options asks whether seperate
+``source`` and ``build`` directories should be created for the documentation.
+For ``dcmri``'s documentation 'yes' was chosen by responding ``y`` + ``Enter``:
 
-The first of these options asks whether seperate ``source`` and ``build`` 
-directories should be created for the documentation. For ``dcmri``'s 
-documentation yes was chosen:
+.. figure:: /images/gettingstarted_sepbuilds.png
 
-Now input a name for your project:
+Now enter a name for your project and author(s) and a version number for the
+project release:
 
-Provide the project author name(s):
+.. figure:: /images/gettingstarted_name.png
 
-Provide the project release/version:
+And finally, choose a language for the project language (simply hitting the ``Enter``
+button chooses the default option displayed in square brackets e.g., English in this
+case [en]):
 
-And finally, choose a language for the project language:
+.. figure:: /images/gettingstarted_language.png
 
 ``Sphinx`` should now start compiling the project. Once completed
-the project documentation folder ``docs`` should now look like this:
+the project documentation folder ``docs`` should look like this:
 
+.. figure:: /images/gettingstarted_folders.png
 
 Build a basic html
 ---------------------
@@ -63,13 +66,15 @@ could look like, run the following command to build a basic html:
 This should create a basic and uncustomised html page which looks like
 like this:
 
+.. figure:: /images/gettingstarted_basichtml.png
+
 To check this, open the index.html which was created in the ``docs\build``
 directory:
 
+.. figure:: /images/gettingstarted_checkbuild.png
 
 The following sections demonstrate how to populate this plain html with
 documentation for the project.
-
 
 
 .. toctree::

@@ -13,6 +13,8 @@ Pushing to GitHub
          docs/build/
          virtual_environment.txt
 
+   .. figure:: /images/github_gitignore.png
+
 #. Create a branch for committing files to
 
    .. code-block:: git

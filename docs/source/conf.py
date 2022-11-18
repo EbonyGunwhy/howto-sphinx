@@ -19,6 +19,7 @@ release = '1.0'
 extensions = ['sphinx.ext.viewcode', # viewing source code
                 'sphinx_rtd_theme', # ReadTheDocs theme
                 'sphinx_copybutton', # copy button for code blocks
+                'sphinx.ext.autosectionlabel' #allows you to refer sections using their title
                 ]
 
 # Add any paths that contain templates here, relative to this directory

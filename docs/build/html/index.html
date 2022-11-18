@@ -284,12 +284,40 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#steps-for-creating-documentation-for-open-source-software-projects-with-sphinx">
+   <em>
+    Steps for creating documentation for open source software projects with Sphinx.
+   </em>
+  </a>
+  <ul class="nav section-nav flex-column">
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -301,6 +329,23 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#steps-for-creating-documentation-for-open-source-software-projects-with-sphinx">
+   <em>
+    Steps for creating documentation for open source software projects with Sphinx.
+   </em>
+  </a>
+  <ul class="nav section-nav flex-column">
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -310,17 +355,39 @@ title="Print to PDF"
                 
   <section id="welcome-to-howto-sphinx-s-documentation">
 <h1>Welcome to howto-sphinx’s documentation!<a class="headerlink" href="#welcome-to-howto-sphinx-s-documentation" title="Permalink to this headline"></a></h1>
-<p>Steps for creating documentation for open source software projects with Sphinx.</p>
+<section id="steps-for-creating-documentation-for-open-source-software-projects-with-sphinx">
+<h2><em>Steps for creating documentation for open source software projects with Sphinx.</em><a class="headerlink" href="#steps-for-creating-documentation-for-open-source-software-projects-with-sphinx" title="Permalink to this headline"></a></h2>
+<p>This guide demonstrates how to create html documentation using
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/index.html#">Sphinx</a> and publish/host the pages
+on a public platform.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This guide is currently a work-in-progress and will be updated with new tips &amp; tricks soon.</p>
+<p>This guide is currently a work-in-progress and will periodically undergo updates until
+completion.</p>
 </div>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Project environment and setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#environment-and-dependencies">Environment and dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#installation">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting started with Sphinx</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#create-a-documentation-folder">Create a documentation folder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#sphinx-quickstart"><code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="gettingstarted.html#build-a-basic-html">Build a basic html</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="deploy.html">Deploy Sphinx documentation online</a></li>
+<li class="toctree-l1"><a class="reference internal" href="integration.html">Continuous integration with GitHub</a></li>
+</ul>
 </div>
 <div class="toctree-wrapper compound">
 </div>
+</section>
 </section>
 
 
