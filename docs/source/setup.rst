@@ -51,7 +51,7 @@ Installation
 			
          conda activate <project_name>
 
-#. Create a requirements.txt file listing all the required packages to install, e.g.::
+#. Create a ``requirements.txt`` file listing all the required packages to install, e.g.::
 		
          pandas
          numpy

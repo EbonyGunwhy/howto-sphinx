@@ -53,8 +53,22 @@ the project documentation folder ``docs`` should look like this:
 
 .. figure:: /images/gettingstarted_folders.png
 
+``Makefile`` (linux) and ``make.bat`` (Windows) are shell and batch scripts,
+respectively, created by Sphinx that make life easier when it comes to actually
+building the html pages. These scripts build the html pages, and are executed
+in conjunction with the command ``make``. More details below, in
+(:ref:`Build a basic html`).
+
+The ``build`` directory is for storing all of the html pages built with Sphinx,
+together forming the documentation for the project.
+
+The ``source`` directory contains all content that will be used to actually
+build the html pages.
+
+.. _my-reference-label:
+
 Build a basic html
----------------------
+------------------------------
 
 To get a feel for how Sphinx works and what the project documentation
 could look like, run the following command to build a basic html:
@@ -68,7 +82,7 @@ like this:
 
 .. figure:: /images/gettingstarted_basichtml.png
 
-To check this, open the index.html which was created in the ``docs\build``
+To check this, open the index.html which was created in the ``docs/build/``
 directory:
 
 .. figure:: /images/gettingstarted_checkbuild.png

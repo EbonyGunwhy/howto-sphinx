@@ -1,6 +1,10 @@
 Continuous integration with GitHub
 =====================================
 
+.. caution::
+
+  This page is currently undergoing development.
+
 #. Create folder path from top-level of repo: ``.github/workflows``
 
 #. Navigate to ``workflows`` and create a ``.yaml`` file
@@ -28,7 +32,7 @@ Continuous integration with GitHub
    .. code-block:: yaml
 		
          jobs:
-				    docs:
+				  docs:
 
 #. Specify the OS which the job should run on, e.g.,
 

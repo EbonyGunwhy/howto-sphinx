@@ -74,7 +74,7 @@ already been specified underneath.
 * ``:maxdepth:`` indicates the number of nested headings to display.
 
 * ``:caption:`` is used to specify the title for the contents (this is set by default
-to ``Contents``, however can be changed to anything):
+   to ``Contents``, however can be changed to anything):
  
 .. code-block:: rst
    
@@ -100,14 +100,16 @@ similar to the current ``index.rst`` file, however containing the new content th
 should be displayed for those pages.
 
 Begin by copying and pasting this ``index.rst`` file within the ``docs/source/``
-directory. Rename the file and open it to edit the contents.
+directory.
 
 .. figure:: /images/index-page_newpage1.png
 
+Rename the file and open it to edit the contents.
+
 .. figure:: /images/index-page_newpage2.png
 
-Delete the text and directives and give page a new header, along with some custom
-text:
+Delete the text and directives and give the page a new header title, along with
+some custom text:
 
 .. figure:: /images/index-page_newpage3.png
 

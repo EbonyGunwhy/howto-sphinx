@@ -3,41 +3,50 @@
 Working with restructured text files
 =======================================
 
-Bold
+.. caution::
+
+  This page is currently undergoing development.
+
+**Bold**
+----------
 	
 .. code-block:: rst
 	
 	**text**
 
-Italics 
+*Italics*
+------------
 	
 .. code-block:: rst
 	
 	*text*
 
-Bullets 
+Bullets
+------------- 
 	
 .. code-block:: rst
 	
 	* text
 
 Numbered list
+----------------
 
-Like this:
+Option #1:
 
 .. code-block:: rst
 
 	1. Item 1
 	2. Item 2
 
-or like this, gives the same output:
+or Option #2 (gives the same output):
 
 .. code-block:: rst
 
 	#. Item 1
 	#. Item 2
 
-Separate headings
+Separate sections with headings
+----------------------------------
 
 .. code-block::
 
@@ -50,7 +59,11 @@ Separate headings
 	Sub-sub-heading
 	++++++++++++++++
 
-Edit/add directives (.. directive::), e.g.:
+Edit/add directives (.. directive::)
+--------------------------------------
+
+*Examples*
+++++++++++++++
 
 * Insert a figure
 
@@ -88,22 +101,22 @@ Edit/add directives (.. directive::), e.g.:
 		
 		.. admonition:: Customised text box
 
-Customise directive features on newly indented line directly underneath 
-directive (:features:), e.g.:
+*Customise directive features on newly indented line directly underneath directive*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. code-block:: rst
 	
 	..toctree::
 		:maxdepth: 5
-	  :caption: Contents:
+		:caption: Contents:
 
 .. code-block:: rst
 	
 	.. figure:: /images/sheffield-logo.jpg
 		:align: right
 
-Display text on newly indented line underneath directive with space
-separating lines, e.g.:
+*Display text on newly indented line underneath directive with space separating lines*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. code-block:: rst
 	

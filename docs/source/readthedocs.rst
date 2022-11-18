@@ -9,21 +9,21 @@ Syncing with ReadTheDocs
 
    ``'My Projects -> Import a Project -> Import manually'``
 
-.. figure:: /images/rtd_project1.png
+   .. figure:: /images/rtd_project1.png
 
-.. figure:: /images/rtd_project2.png
+   .. figure:: /images/rtd_project2.png
 
 #. Input GitHub repository name, url, and branch and click ``Next``
 
-.. figure:: /images/rtd_project3.png
+   .. figure:: /images/rtd_project3.png
 
 #. Install in ``virtualenv``
 
-.. figure:: /images/rtd_project4.png
+   .. figure:: /images/rtd_project4.png
 
 #. Click ``Build version`` and wait for the build to complete
 
 #. Check ReadTheDocs build by clicking the ``View Docs`` button
    in the top-right corner of the page
 
-.. figure:: /images/rtd_viewdocs.png
+   .. figure:: /images/rtd_viewdocs.png
